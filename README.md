@@ -1,47 +1,44 @@
 # Credit Score Prediction
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+## Project Overview
 
-Credit risk analysis and predictive modeling case study.
+**Business Issue:** A fictional company wants to make its credit analysis process more efficient, scalable, and data-oriented. Currently, part of the client analysis still depends on manual labor, which makes the process slow and prone to inconsistencies.
+
+**Main Objective:** Build a predictive model capable of classifying a client's credit score based on financial information, payment history, credit profile, and behavior.
+
+## Dataset
+
+This project uses the [Credit Score Classification](https://www.kaggle.com/datasets/parisrohan/credit-score-classification) dataset, publicly available on Kaggle. It contains credit-related information used to classify individuals into credit score categories (Poor, Standard, Good).
+
+> Data files are not included in this repository (see `.gitignore`). To reproduce this project, download the dataset from the link above and place it in `data/raw/`.
+
+## Technologies Used
+
+- **Language:** Python
+- **Environment:** Google Colab
+- **Tools:** Pandas, Scikit-learn, Seaborn, Matplotlib
+
+## Project Status
+
+This repository is being published incrementally, as each stage of the project is completed.
+
+- [x] Initial Data Exploration
+- [ ] Data Preparation
+- [ ] Exploratory Data Analysis
+- [ ] Predictive Modeling
+- [ ] Model Evaluation
 
 ## Project Organization
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         credit_score_prediction and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── credit_score_prediction   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes credit_score_prediction a Python module
+This repository follows the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/) structure.
+
+​```
+├── data/               <- Data files (not versioned, see .gitignore)
+├── notebooks/          <- Jupyter/Colab notebooks
+├── reports/            <- Generated analysis and figures
+├── src/                <- Source code for use in this project
+└── README.md
+​``` ├── __init__.py             <- Makes credit_score_prediction a Python module
     │
     ├── config.py               <- Store useful variables and configuration
     │
