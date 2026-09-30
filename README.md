@@ -22,37 +22,31 @@ This project uses the [Credit Score Classification](https://www.kaggle.com/datas
 
 This repository is being published incrementally, as each stage of the project is completed.
 
-- [x] Initial Data Exploration
-- [ ] Data Preparation
-- [ ] Exploratory Data Analysis
-- [ ] Predictive Modeling
-- [ ] Model Evaluation
+- [x] Acquire data - Initial Data Exploration
+- [ ] Scrub - Data Preparation
+- [ ] Explore - Exploratory Data Analysis
+- [ ] Model - Predictive Modeling
+- [ ] Interpret - Model Evaluation
+- [ ] Communicate - Final Report & Documentation
 
 ## Project Organization
 
 This repository follows the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/) structure.
 
-​```
-├── data/               <- Data files (not versioned, see .gitignore)
-├── notebooks/          <- Jupyter/Colab notebooks
-├── reports/            <- Generated analysis and figures
-├── src/                <- Source code for use in this project
+```text
+.
+├── data/                   <- Data files (not versioned, see .gitignore)
+├── notebooks/              <- Jupyter/Colab notebooks
+├── reports/                <- Generated analysis and figures
+├── src/                    <- Source code for use in this project
+│   ├── __init__.py         <- Makes credit_score_prediction a Python module
+│   ├── config.py           <- Store useful variables and configuration
+│   ├── dataset.py          <- Scripts to download or generate data
+│   ├── features.py         <- Code to create features for modeling
+│   ├── modeling/                
+│   │   ├── __init__.py 
+│   │   ├── predict.py      <- Code to run model inference with trained models          
+│   │   └── train.py        <- Code to train models
+│   └── plots.py            <- Code to create visualizations
 └── README.md
-​``` ├── __init__.py             <- Makes credit_score_prediction a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
-
---------
 
